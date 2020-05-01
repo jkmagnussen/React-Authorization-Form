@@ -68,3 +68,9 @@ h1 {
 .title {
   font-size: 60px;
 }
+
+#error {
+  font-size: 30px;
+  padding: 20px;
+  color: red;
+}

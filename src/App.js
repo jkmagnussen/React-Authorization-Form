@@ -18,6 +18,12 @@ class App extends React.Component {
   authorize(e) {
     const password = e.target.querySelector('input[type="password"]').value;
     const auth = password === this.state.password;
+
+    if (password !== this.state.password) {
+      const Err = document.getElementById("error");
+      Err.innerHTML =
+        "Error, you've entered the wrong password. <br> Please enter the password 'swordfish'.";
+    }
     this.setState({
       authorized: auth,
     });
@@ -33,6 +39,7 @@ class App extends React.Component {
         />
         <br />
         <input type="submit" className="button" />
+        <div id="error"></div>
 
         <img src={logo} alt={logo} className="logo" />
       </form>
