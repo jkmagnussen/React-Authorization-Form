@@ -40,7 +40,7 @@ class App extends React.Component {
 
     const loggedIn = (
       <ul>
-        <a href="jkmagnussen-reactsfasystem.netlify.app">
+        <a href="https://jkmagnussen-reactsfasystem.netlify.app/">
           <button className="return" type="button">
             Logout
           </button>
